@@ -33,13 +33,12 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        tdue: tdue {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TDUE";
-            bindings = <&macro_ue>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
+       bspc_del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
     };
 
