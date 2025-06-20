@@ -74,10 +74,17 @@
             bindings = <&kp LEFT_ALT &kp U>;
             label = "UE";
         };
-        umlaut_a: umlaut_a {
+       umlaut_a: umlaut_a {
             compatible = "zmk,behavior-macro";
-            label = "Umlaut A";
-            bindings = <&text "ä">;
+            label = "Unicode Ä";
+            bindings = <
+                &macro_tap &kp LC(LS(U))
+                &macro_tap &kp N0
+                &macro_tap &kp N0
+                &macro_tap &kp E
+                &macro_tap &kp N4
+                &macro_tap &kp ENTER
+            >;
 };
     };
 
