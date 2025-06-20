@@ -122,7 +122,7 @@
         UMLAUTE {
             bindings = <
 &trans  &trans  &trans  &kp EN_EURO  &trans  &trans                 &trans         &trans  &kp EN_U_UMLAUT  &trans  &kp EN_O_UMLAUT  &trans  &trans
-&trans  &kp EN_A_UMLAUT  &kp EN_SZ  &trans  &trans  &trans            &trans  &trans  &trans  &kp DE_U_UMLAUT  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EN_A_UMLAUT  &kp EN_SZ  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &kp DE_U_UMLAUT  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
