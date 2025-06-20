@@ -74,8 +74,10 @@
 
     macros {
         macro_ue: ue {
-            ZMK_UNICODE_PAIR(   de_ue,      N0, N0,  F,  C,    N0, N0,  D,  C) // ü/Ü
-
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp U>;
+            label = "UE";
         };
     };
 
