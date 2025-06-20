@@ -77,8 +77,8 @@
         umlaut_a: umlaut_a {
             compatible = "zmk,behavior-macro";
             label = "Umlaut A";
-            bindings = <&macro_tap &text "ä">;
-        };
+            bindings = <&text "ä">;
+};
     };
 
     keymap {
