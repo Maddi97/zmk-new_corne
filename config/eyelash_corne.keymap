@@ -3,8 +3,9 @@
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/german.dtsi"
+#include "keys_us_international.h"
+#include "keys_de.h"
+
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -120,8 +121,8 @@
 
         UMLAUTE {
             bindings = <
-&trans  &trans  &trans  &euro_sign  &trans  &trans                 &trans         &trans  &de_ue  &trans  &de_oe  &trans  &trans
-&trans  &de_ae  &de_eszett  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp EN_EURO  &trans  &trans                 &trans         &trans  &kp EN_U_UMLAUT  &trans  &kp EN_O_UMLAUT  &trans  &trans
+&trans  &kp EN_A_UMLAUT  &kp EN_SZ  &trans  &trans  &trans            &trans  &trans  &trans  &kp DE_U_UMLAUT  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
