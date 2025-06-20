@@ -74,10 +74,8 @@
 
     macros {
         macro_ue: ue {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp U>;
-            label = "UE";
+            ZMK_UNICODE_PAIR(   de_ue,      N0, N0,  F,  C,    N0, N0,  D,  C) // ü/Ü
+
         };
     };
 
@@ -132,7 +130,7 @@
 
         UMLAUTE {
             bindings = <
-&trans  &trans           &trans     &kp EN_EURO  &trans  &trans                    &trans          &trans  &de_ue  &trans  &kp EN_O_UMLAUT  &trans  &trans
+&trans  &trans           &trans     &kp EN_EURO  &trans  &trans                    &trans          &trans  &de_ae  &trans  &kp EN_O_UMLAUT  &trans  &trans
 &trans  &kp EN_A_UMLAUT  &kp EN_SZ  &trans       &trans  &trans            &trans  &trans  &trans  &trans  &kp DE_U_UMLAUT  &trans  &trans           &trans  &trans
 &trans  &trans           &trans     &trans       &trans  &trans  &trans            &trans          &trans  &trans           &trans  &trans           &trans  &trans
                                     &trans       &trans  &trans                                    &trans  &trans           &trans
