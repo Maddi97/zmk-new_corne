@@ -76,6 +76,7 @@
         };
        umlaut_a: umlaut_a {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             label = "Unicode Ä";
             bindings = <
                 &macro_tap &kp LC(LS(U))
