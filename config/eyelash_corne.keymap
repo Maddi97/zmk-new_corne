@@ -68,12 +68,17 @@
     };
 
     macros {
-        umlaut_a: umlaut_a {
-        compatible = "zmk,behavior-macro";
-        label = "Umlaut A";
-        bindings = <&macro_tap &text "ä">;
+        macro_ue: ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp U>;
+            label = "UE";
         };
-    
+        umlaut_a: umlaut_a {
+            compatible = "zmk,behavior-macro";
+            label = "Umlaut A";
+            bindings = <&macro_tap &text "ä">;
+        };
     };
 
     keymap {
