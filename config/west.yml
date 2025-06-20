@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: urob
+      url-base: https://github.com/urob
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
@@ -10,8 +12,6 @@ manifest:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
       revision: main
-    - name: urob
-      url-base: https://github.com/urob
     - name: zmk
       remote: zmkfirmware
       revision: main
