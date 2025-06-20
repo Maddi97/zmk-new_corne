@@ -139,8 +139,8 @@
 
         UMLAUTE {
             bindings = <
-&trans  &trans           &trans     &kp umlaut_a  &trans  &trans                    &trans          &trans  &de_ae  &trans  &kp umlaut_a  &trans  &trans
-&trans  &kp umlaut_a  &kp umlaut_a  &trans       &trans  &trans            &trans  &trans  &trans  &trans  &kp DE_U_UMLAUT  &trans  &trans           &trans  &trans
+&trans  &trans           &trans     &umlaut_a  &trans  &trans                    &trans          &trans  &de_ae  &trans  &umlaut_a  &trans  &trans
+&trans  &umlaut_a       &umlaut_a  &trans       &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans
 &trans  &trans           &trans     &trans       &trans  &trans  &trans            &trans          &trans  &trans           &trans  &trans           &trans  &trans
                                     &trans       &trans  &trans                                    &trans  &trans           &trans
             >;
