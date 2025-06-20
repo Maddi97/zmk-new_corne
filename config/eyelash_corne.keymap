@@ -35,9 +35,6 @@
     trigger-period-ms = <16>;
 };
 
-ZMK_UNICODE_PAIR(   de_ae,      N0, N0,  E, N4,    N0, N0,  C, N4) // ä/Ä
-
-
 / {
     behaviors {
         td0: td0 {
