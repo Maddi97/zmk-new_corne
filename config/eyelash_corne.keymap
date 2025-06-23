@@ -133,7 +133,7 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
             display-name = "SYMBOL";
             bindings = <
 &kp ESCAPE      &kp C_BRI_DEC  &kp C_BRI_UP  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_VOLUME_UP                              &mmv MOVE_UP                     &kp CARET                 &kp AMPS                  &kp ASTRK             &kp LPAR   &kp RPAR  &kp BACKSPACE
-&kp TAB         &none          &none         &kp DELETE         &kp LEFT_SHIFT   &kp C_VOLUME_DOWN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT                  &kp DOWN                  &kp UP                &kp RIGHT  &kp BSLH  &rgb_ug RGB_TOG
+&kp TAB         &none          &none         &kp DELETE         &kp LEFT_SHIFT   &kp C_VOLUME_DOWN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT                  &kp DOWN                  &kp UP                &kp RIGHT  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG
 &kp LEFT_SHIFT  &none          &none         &none              &none            &none              &trans                    &mmv MOVE_DOWN                   &none                     &kp PLUS                  &kp LBRC              &kp RBRC   &kp PIPE  &kp TILDE
                                              &kp LCTRL          &kp LEFT_ALT     &kp LEFT_GUI                                                                  &kp LS(LA(LC(LEFT_GUI)))  &kp LS(LG(LC(NUMBER_4)))  &kp LG(LS(NUMBER_4))
             >;
