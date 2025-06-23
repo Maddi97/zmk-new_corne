@@ -2,29 +2,28 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/rgb.h>
 
-// LS 23.01.2025 advice from zmk docs
-// #include <zmk/unicode.h> 
 
-#define HOST_OS 2
 #include "zmk-helpers/helper.h"
-// Source desired key-position labels
-#include "zmk-helpers/key-labels/eyelash42.h"
-// Source unicode-chars for desired languages
-#include "zmk-helpers/unicode-chars/german.dtsi"
 
-// Including the ZMK_Unicodea_pairs/single for Umlaute and special characters
+// Source desired key-position labels
+
+#include "zmk-helpers/key-labels/eyelash42.h"
+
+// Source unicode-chars for desired languages
+
+#include "zmk-helpers/unicode-chars/german.dtsi"
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
 ZMK_UNICODE_PAIR( de_ae,   N0, N0,  E, N4,   N0, N0,  C, N4 ) // ä, Ä
 ZMK_UNICODE_PAIR( de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 ) // ö, Ö
 ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C ) // ü, Ü
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C) // €
-ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß >
-
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/rgb.h>
+ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß 
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -153,11 +152,11 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß >
         };
 
         UMLAUTE {
-             bindings = <
-&trans    &kp ESCAPE    &trans  &euro_sign  &trans  &trans      &trans     &de_ue     &trans        &de_oe        &trans           &trans
-&trans    &de_ae        &de_sz  &trans      &trans  &trans      &kp LEFT   &kp DOWN   &kp UP_ARROW  &kp RIGHT     &trans           &trans
-&trans    &kp CAPS      &trans  &trans      &trans  &trans      &trans     &trans     &trans        &trans        &trans           &trans
-                            &trans      &trans  &trans      &trans     &trans        &trans
+            bindings = <
+&trans  &trans     &trans     &euro_sign  &trans  &trans                    &trans          &trans  &de_ue  &kp D   &de_oe  &trans  &trans
+&trans  &de_ae  &de_sz  &trans     &trans  &trans            &trans  &trans  &trans  &trans  &trans  &kp S   &trans     &trans  &trans
+&trans  &trans     &trans     &trans     &trans  &trans  &trans            &trans          &trans  &trans  &kp A   &trans     &trans  &trans
+                              &trans     &trans  &trans                                    &trans  &trans  &trans
             >;
         };
     };
