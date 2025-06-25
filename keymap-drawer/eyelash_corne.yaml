@@ -75,8 +75,8 @@ layers:
   - (
   - '{'
   - {t: '[', s: '{'}
-  - {t: '-', s: _}
   - {t: '=', s: +}
+  - {t: ;, s: ':'}
   - {t: '`', s: '~'}
   - $$mdi:apple-keyboard-shift$$
   - ^
@@ -89,7 +89,7 @@ layers:
   - )
   - '}'
   - {t: ']', s: '}'}
-  - _
+  - {t: '-', s: _}
   - +
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-option$$
@@ -125,7 +125,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: \, s: '|'}
+  - RGB EFF
   - RGB TOG
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -200,19 +200,19 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&umlaut_a'
+  - '&euro_sign'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&de_ae'
+  - '&de_ue'
   - D
-  - '&umlaut_a'
+  - '&de_oe'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
-  - '&umlaut_a'
-  - '&umlaut_a'
+  - '&de_ae'
+  - '&de_sz'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -242,6 +242,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&es_n_tilde'
   - {type: held alternate}
   - {type: held alternate}
