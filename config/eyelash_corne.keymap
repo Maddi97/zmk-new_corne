@@ -121,8 +121,8 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
             display-name = "NUMBER";
             bindings = <
 &trans          &kp N1     &kp N2         &kp N3        &kp N4          &kp N5                                      &mmv MOVE_UP                     &kp N6                 &kp N7           &kp N8    &kp N9     &kp N0     &bspc_del
-&lt 4 TAB       &kp EXCL   &kp AT_SIGN    &kp HASH      &kp DOLLAR      &kp PERCENT                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LBKT  &kp MINUS  &kp EQUAL  &kp GRAVE
-&kp LEFT_SHIFT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp BACKSLASH   &kp PIPE      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT  &kp UNDER  &kp PLUS   &kp ENTER
+&lt 4 TAB       &kp EXCL   &kp AT_SIGN    &kp HASH      &kp DOLLAR      &kp PERCENT                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LBKT  &kp EQUAL  &kp SEMICOLON  &kp GRAVE
+&kp LEFT_SHIFT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp BACKSLASH   &kp PIPE      &kp C_MUTE                    &mmv MOVE_DOWN                   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT  &kp MINUS  &kp PLUS   &kp ENTER
                                           &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_GUI                                                                 &none                  &none            &mo 4
             >;
 
@@ -158,7 +158,7 @@ ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß
 &trans  &trans     &trans     &euro_sign  &trans  &trans                    &trans          &trans  &de_ue  &kp D   &de_oe  &trans  &trans
 &trans  &de_ae  &de_sz  &trans     &trans  &trans            &trans  &trans  &trans  &trans  &trans  &kp S   &trans     &trans  &trans
 &trans  &trans     &trans     &trans     &trans  &trans  &trans            &trans          &trans  &trans  &kp A   &trans     &trans  &trans
-                              &trans     &trans  &trans                                    &trans  &trans  &trans
+                              &trans     &trans  &trans                                    &es_n_tilde  &trans  &trans
             >;
         };
     };
