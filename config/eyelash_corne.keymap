@@ -26,6 +26,7 @@ ZMK_UNICODE_PAIR( de_oe,   N0, N0,  F, N6,   N0, N0,  D, N6 ) // ö, Ö
 ZMK_UNICODE_PAIR( de_ue,   N0, N0,  F,  C,   N0, N0,  D,  C ) // ü, Ü
 ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C) // €
 ZMK_UNICODE_SINGLE(de_sz, N0, N0, D, F) // ß 
+ZMK_UNICODE_PAIR(es_n_tilde,        N0, N0, F, N1,  N0, N0, D, N1)  // ñ/Ñ 
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
